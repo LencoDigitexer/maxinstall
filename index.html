@@ -19,6 +19,7 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/js/simplebox.css" rel="stylesheet">
     <!-- =======================================================
   * Template Name: Arsha - v2.2.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -39,27 +40,10 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class=""><a href="#">Главная</a></li>
-                    <li class="active"><a href="#about">Кто мы</a></li>
+                    <li class="active"><a href="#about">О комании</a></li>
                     <li><a href="#services">Возможности</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li class="drop-down"><a href="">Drop Down</a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="drop-down"><a href="#">Deep Drop Down</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#certificate">Сертификат</a></li>
+                    <li><a href="#works">Этапы работ</a></li>
                     <li class=""><a href="#contact">Контакты</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
@@ -88,7 +72,7 @@
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
                 <div class="section-title" style="">
-                    <h2>Кто мы<br></h2>
+                    <h2>О комании<br></h2>
                 </div>
                 <div class="row content">
                     <div class="col-lg-6" style="">
@@ -299,6 +283,7 @@
             </div>
         </section><!-- End Cta Section -->
         <!-- ======= Portfolio Section ======= -->
+        <!--
         <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
@@ -395,14 +380,35 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Portfolio Section -->
+        </section> End Portfolio Section -->
         <!-- ======= Team Section ======= -->
-        <section id="team" class="team section-bg">
+        <section id="certificate" class="team section-bg">
             <div class="container" data-aos="fade-up">
+                <script type="text/javascript" src="assets/js/simplebox_util.js"></script>
+                    <script type="text/javascript">
+                    (function(){
+                    var boxes=[],els,i,l;
+                    if(document.querySelectorAll){
+                    els=document.querySelectorAll('a[rel=simplebox]');	
+                    Box.getStyles('simplebox_css','simplebox.css');
+                    Box.getScripts('simplebox_js','simplebox.js',function(){
+                    simplebox.init();
+                    for(i=0,l=els.length;i<l;++i)
+                    simplebox.start(els[i]);
+                    simplebox.start('a[rel=simplebox_group]');			
+                    });
+                    }
+                    })();</script>
                 <div class="section-title">
-                    <h2>Team</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <h2>Сертификат</h2>
+                    <p>Наша продукция и услуги сертифицированы стандартами качества.</p>
                 </div>
+                
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                        <img src="images/certificate.jpg" class="img-fluid"></a>
+                </div>
+                
+                <!--
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
@@ -468,63 +474,44 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section><!-- End Team Section -->
         <!-- ======= Pricing Section ======= -->
-        <section id="pricing" class="pricing">
+        <section id="works" class="pricing">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>Pricing</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    
+                    <p></p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="box">
-                            <h3>Free Plan</h3>
-                            <h4><sup>$</sup>0<span>per month</span></h4>
-                            <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                            </ul>
-                            <a href="#" class="buy-btn">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    
+                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
                         <div class="box featured">
-                            <h3>Business Plan</h3>
-                            <h4><sup>$</sup>29<span>per month</span></h4>
+                            <h3>Этапы работ</h3>
                             <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                                <li><i class="bx bx-check"></i> Заявка</li>
+                                <b>Вы оставляете заявку</b>
+                                <li><i class="bx bx-check"></i> Выезд специалиста</li>
+                                <b>К вам бесплатно выезжает наш специалист.</b>
+                                <li><i class="bx bx-check"></i> Расчет</li>
+                                <b>На встрече мы выясняем ваши задачи, делаем расчет пожарных рисков и составляем смету работ</b>
+                                <li><i class="bx bx-check"></i> Коммерческое предложение</li>
+                                <b>Отправляем вам коммерческое предложение</b>
+                                <li><i class="bx bx-check"></i> Договор</li>
+                                <b>Заключаем договор и начинаем работу</b>
                             </ul>
-                            <a href="#" class="buy-btn">Get Started</a>
+                            <a href="#contact" class="buy-btn">Оставить заявку</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="box">
-                            <h3>Developer Plan</h3>
-                            <h4><sup>$</sup>49<span>per month</span></h4>
-                            <ul>
-                                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                            </ul>
-                            <a href="#" class="buy-btn">Get Started</a>
-                        </div>
+                    <div class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1516055619834-586f8c75d1de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
         </section><!-- End Pricing Section -->
         <!-- ======= Frequently Asked Questions Section ======= -->
+        <!--
         <section id="faq" class="faq section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
@@ -576,7 +563,7 @@
                     </ul>
                 </div>
             </div>
-        </section><!-- End Frequently Asked Questions Section -->
+        </section>--><!-- End Frequently Asked Questions Section -->
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
@@ -612,7 +599,7 @@
                             <div class="text-center">Оставьте номер телефона</div>
                             <div class="text-center">Мы позвоним вам в ближайшее время</div>
                             <div class="form-group">
-                                <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe src="https://forms.yandex.ru/u/5ffc557cfc9bba82e3ae64e1/?iframe=1" frameborder="0" name="ya-form-5ffc557cfc9bba82e3ae64e1" width="650"></iframe>
+                                <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe src="https://forms.yandex.ru/u/5ffc557cfc9bba82e3ae64e1/?iframe=1" frameborder="0" name="ya-form-5ffc557cfc9bba82e3ae64e1" width="100%"></iframe>
                             </div>
                             <div class="mb-3">
                                 <div class="loading">Loading</div>
@@ -628,52 +615,31 @@
     </main><!-- End #main -->
     <!-- ======= Footer ======= -->
     <footer id="footer">
-        <div class="footer-newsletter">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Arsha</h3>
+                        <h3>MAXINSTALL</h3>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Минеральные Воды <br>
+                            Ул. Советская 51А 3 этаж 12 офис<br>
+                            ТД "ЭЛИТА" <br><br>
+                            <strong>Phone:</strong> +79383527547<br>
+                            <strong>Email:</strong> maxim@maxinstall.ru<br>
                         </p>
                     </div>
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
+                        <h4>Навигация по сайту</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Главная</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">О комании</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Возможности</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Сертификат</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
+                    <!--
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Social Networks</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
@@ -685,19 +651,16 @@
                             <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                © Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+                © Copyright <strong><span>MAXINSTALL</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://lencodigitexer.tk/">LencoDigitexer</a>
             </div>
         </div>
     </footer><!-- End Footer -->
